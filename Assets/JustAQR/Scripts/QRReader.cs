@@ -32,10 +32,6 @@ namespace JustAQRScanner
         void InitializeCamera()
         {
             camTexture = new WebCamTexture();
-            int h = (int)(Screen.height / 3.25f);
-            int w = (int)(Screen.width / 3.25f);
-            camTexture.requestedHeight = h;
-            camTexture.requestedWidth = w;
             camTexture.filterMode = FilterMode.Bilinear;
 
             if (camTexture != null)
